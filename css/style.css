@@ -134,13 +134,30 @@ a,
 }
 
 .btn-custom {
-	margin-top: 20px;
+	margin-top: 80px;
 	background-color: transparent !important;
 	border: 2px solid #ddd;
 	padding: 12px 40px;
 	font-size: 16px;
+	
+	
 }
-
+.new{
+	margin-top: 40px;
+	
+		width: 150px;
+		height: 50px;
+		border: none;
+		font-size: 20px;
+		color: black;
+		line-height: 50px;
+		cursor: pointer;
+		transition: ease all 0.5s;
+	
+}
+.new2{
+	margin-top: 40px;
+}
 .lead {
 	font-size: 18px;
 	line-height: 30px;
@@ -2017,7 +2034,7 @@ p.section_count {
 .full {
 	float: left;
 	width: 100%;
-	margin: 60px 10px;
+	margin: 0px 10px;
 }
 
 .heading_main {
@@ -2321,7 +2338,7 @@ ul.bottom_menu li {
 }
 
 .contact_form {
-    background: url('../images/back.png');
+   
     background-size: cover;
     background-position: center 10%;
     min-height: 800px;
@@ -2330,14 +2347,14 @@ ul.bottom_menu li {
 
 .field input {
     width: 100%;
-    background: transparent;
+    background: beige;
     min-height: 65px;
-    border: none;
-    margin-top: 100px;
+    border: black;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 0px;
     margin-left: 10px;
-    color: #fff;
+    color: black;
     padding: 0 25px;
     font-size: 17px;
     font-weight: 300;
@@ -2347,7 +2364,7 @@ ul.bottom_menu li {
     width: 100%;
     background: #0e0606;
     min-height: 120px;
-    border: none;
+    border: black;
     margin: 15px 0px;
 
     color: #fff;
@@ -2356,13 +2373,31 @@ ul.bottom_menu li {
     font-weight: 300;
 }
 
-.contact_form_inner button {
-    width: 210px;
+  /* Style the select element */
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #555;
+	width: 500px; /* Adjust the width as needed */
     height: 60px;
+  }
+  
+  /* Style the option elements */
+  select option {
+    padding: 5px;
+  }
+
+
+.contact_form_inner button {
+    width: 150px;
+    height: 50px;
     border: none;
     font-size: 20px;
-    color: #050000;
-    line-height: 62px;
+    color: black;
+    line-height: 50px;
     cursor: pointer;
     transition: ease all 0.5s;
 }
@@ -2370,7 +2405,82 @@ ul.bottom_menu li {
 
 .contact_form_inner button:hover,
 .contact_form_inner button:focus {
-    color: #fff;
+    color: beige;
     background: #050000;
 }
 
+.boo {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .login-container {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	padding: 30px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+	margin-bottom: 30px;
+  }
+  
+  .form-do {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 16px;
+  }
+  
+  button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .signup-section {
+	margin-top: 10px;
+  }
+  
+  .signup-link {
+	color: #777;
+	text-decoration: none;
+  }
+  
+  .signup-link:hover {
+	color: #333;
+  }
+  .dropdown-container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  #content {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+  }
