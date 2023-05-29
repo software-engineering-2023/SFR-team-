@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>SFR BANK - Responsive HTML5 Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -63,7 +63,17 @@
                         <ul>
                             <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
                             <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
-                           
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
                         </ul>
                     </div>
                 </div>
@@ -100,40 +110,59 @@
     <!-- End header -->
 
     <!-- Start Banner -->
-
+    <div class="section contact_form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 offset-lg-3">
+                    <div class="full">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="section contact_form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 offset-lg-3">
+                    <div class="full">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- End Banner -->
     
    <!-- section -->
    <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="full services_blog">
-            <a href="creditcard.html" onclick="checker()">
+            <a href="creditcardrequest.html" onclick="CreditCards">
                 <img class="img-responsive" src="images/creditcard.png" alt="#" />
-                <h4>Credit Cards</h4>
+                <h4>Credit Cards Requests</h4>
             </a>
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="full services_blog">
-            <a href="reminders.html" onclick="Reminders">
-                <img class="img-responsive" src="images/s2.png" alt="#" />
-                <h4>Reminders</h4>
+            <a href="replacement.html" onclick="Reminders">
+                <img class="img-responsive" src="images/rep.png" alt="#" />
+                <h4>Replacements Requests</h4>
             </a>
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="full services_blog">
-            <a href="loan.html" onclick="Loans">
+            <a href="loanrequest.html" onclick="Loans">
                 <img class="img-responsive" src="images/loan.jpeg" alt="#" />
-                <h4>Loans</h4>
+                <h4>Loans Requests</h4>
             </a>
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="full services_blog">
-            <a href="bill.html" onclick="BillPayments">
-                <img class="img-responsive" src="images/billpayment.jpeg" alt="#" />
-                <h4>BillPayments</h4>
+            <a href="bankertransaction.html" onclick="BillPayments">
+                <img class="img-responsive" src="images/yes.png" alt="#" />
+                <h4>Client Transactions</h4>
             </a>
         </div>
     </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>SFR BANK - Responsive HTML5 Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -54,16 +54,26 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="logo_section">
-                        <a class="navbar-brand" href="home.html">
-                            <img src="images/logo.png" alt="image" style="width: 200px; height: auto;">
-                        </a>
-                    </div>
+                  <div class="logo_section">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="images/logo.png" alt="image" style="width: 200px; height: auto;">
+                    </a>
+                </div>
                     <div class="site_information">
                         <ul>
                             <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
                             <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
-                           
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
                         </ul>
                     </div>
                 </div>
@@ -90,12 +100,7 @@
                 </div>
                      </div>
                  </nav>
-                 <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="images/search_icon.png" alt="#" />
-                    </a>
-                </div> 
+                 
                 </div>
             </div>
           </div>
@@ -110,11 +115,11 @@
     .large-text {
         font-size: 25px; /* Adjust the size as per your requirement */
       position: relative;
-      top: 110px;
-      margin-left: 20px;}
+      top: 250px;
+      margin-left: 30px;}
   </style>
 </head> 
-<div>
+<!-- <div>
 <body>
   <span class="large-text">Cardholder :Sama Samy.</span>
 
@@ -127,19 +132,135 @@
       <span class="large-text">Expiry Date: 06/25.</span>
     
 
-      </div>
+      </div> -->
+      <div>
+        <body>
+          <span class="large-text" >Number of points : <span id="balance">500</span></span>
+        
+        
+          </div>
+</body> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            overflow: hidden; /* Hide both horizontal and vertical scrollbars */
+        }
+
+        /* Optional: If you want to hide only the vertical scrollbar */
+        body::-webkit-scrollbar {
+            width: 0; /* Remove the vertical scrollbar */
+        }
+
+        /* Optional: If you want to hide only the horizontal scrollbar */
+        body::-webkit-scrollbar {
+            height: 0; /* Remove the horizontal scrollbar */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your page content here -->
 </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            overflow: hidden; /* Hide both horizontal and vertical scrollbars */
+        }
+    </style>
+    <script>
+        // Disable scroll functionality
+        window.addEventListener('scroll', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</head>
+<body>
+    <!-- Your page content here -->
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        .image-container {
+            position: relative;
+            left: 390px; /* Adjust the left position as needed */
+            top: 110px; /* Adjust the top position as needed */
+            padding: 20px; /* Adjust the padding value as needed */
+        }
+        
+        .image-container img {
+            width: 600px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .text-box-container {
+            position: absolute;
+            background-color: transparent; /* Set the background color as transparent */
+            padding: 10px; /* Adjust the padding value as needed */
+        }
+
+        .text-box-container input[type="text"] {
+            color: white; /* Set the text color to white */
+            background-color: transparent; /* Set the input field background color as transparent */
+            border: none; /* Remove border */
+            outline: none; /* Remove outline */
+            width: 500px; /* Adjust the width as needed */
+            font-size: 28px; /* Adjust the font size as needed */
+            font-family: Arial, sans-serif; /* Change the font family */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/cc.png" alt="credit card">
+    </div>
+    <div class="text-box-container" style="left: 850px; top: 285px;">
+      <input type="text" placeholder="SRF" style="color: white;">
+    </div>
+    <div class="text-box-container" style="left: 380px; top: 285px;">
+      <input type="text" placeholder="     Platinum " style="color: white;">
+  </div>
+    <div class="text-box-container larger-font" style="left: 440px; top: 470px;">
+        <input type="text" placeholder=" 3009        4563        9808       1234" style="color: white;">
+    </div>
+    <div class="text-box-container" style="left: 440px; top: 510px;">
+      <input type="text" placeholder="       05/29" style="color: white;">
+  </div>
+  <div class="text-box-container" style="left: 650px; top: 510px;">
+    <input type="text" placeholder="     015" style="color: white;">
+</div>
+
+        <div class="text-box-container" style="left: 440px; top: 550px;">
+          <input type="text" placeholder="SAMA SAMY SALAH" style="color: white;">
+    </div>
+    <div class="text-box-container" style="left: 650px; top: 550px;">
+      <input type="text" placeholder="                          VISA" style="color: white;">
+  </div>
+</body>
+</html>
+
+
 
 
 <head>
     
     <style>
       .custom-button {
-        margin-top: 35px; /* Adjust the margin-top to move the button downwards */
-        margin-left: 550px;
-        background-color: grey; /* Adjust the background color as desired */
+        margin-top: 150px; /* Adjust the margin-top to move the button downwards */
+        margin-left: 580px;
+        background-color: rgb(246, 113, 4); /* Adjust the background color as desired */
         color: white;
-        padding: 15px 20px;
+        padding: 12px 16px;
         font-size: 24px;
         border: none;
         cursor: pointer;
@@ -147,15 +268,21 @@
       }
       .popup-message {
       position: fixed;
-      top: 50%;
-      left: 50%;
+      top: 74%;
+      left: 80%;
       transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color:whitesmoke;
       color: white;
       padding: 20px;
       border-radius: 5px;
       font-size: 18px;
+      overflow-y: auto;
     }
+    .popup-content {
+  max-height: 300px; /* Adjust the maximum height as needed */
+  overflow-y: scroll;
+}
+
 
     .close-button {
       position: absolute;
@@ -167,39 +294,230 @@
     </style>
   </head>
   <body>
-    <button class="custom-button" onclick="handleButtonClick()">View my transactions</button>
+    <button class="custom-button" onclick="handleButtonClick2()">View my transactions</button>
   </body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      
+
+      
+        
+      
+      
+        
+
+      /* Styles for the button container */
+      .button-container {
+        position: relative;
+        top: -300px; /* Adjust the top position as needed */
+        left: 50px; /* Adjust the left position as needed */
+      }
+  
+      /* Styles for the large button */
+      .large-button {
+        padding: 15px 30px; /* Adjust the padding as needed */
+        font-size: 24px; /* Adjust the font size as needed */
+        background-color: rgb(246, 113, 4);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
 
 
+  <style>
+    .custom-textbox {
+      position: relative;
+      top: -310px; /* Adjust the top position as needed */
+      left: -760px; /* Adjust the left position as needed */
+    }
+  </style>
+  
+  <input type="number" id="myTextbox" class="custom-textbox" placeholder="Enter number of points" />
+  <body>
+    <div class="button-container">
+      <!-- The large button -->
+      <button class="large-button" onclick="redeem()">Redeem Points</button>
+    </div>
+  </body>
+  </html>
+  <head>
+    <style>
+      /* Styles for the dropdown container */
+      .dropdown-container select {
+        position: relative;
+        top: -500px; /* Adjust the top position as needed */
+        left: 490px;
+        width: 200px; /* Adjust the width as needed */
+      }
+    </style>
+  </head>
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>My Web Page</title>
+      <style>
+          .alert {
+              color: orange; /* Set the color of the alert message to orange */
+          }
+      </style>
+  </head>
+  <body>
+      <div class="dropdown-container">
+          <select id="dropdown">
+              <option value="" disabled selected>Report for card</option>
+              <option value="option1">Theft</option>
+              <option value="option2">Loss</option>
+              <option value="option3">Damage</option>
+          </select>
+      </div>
+      
+      <script>
+          var dropdown = document.getElementById("dropdown");
+          dropdown.addEventListener("change", function() {
+              var selectedOption = dropdown.value;
+      
+              // Display an alert message based on the selected option
+              if (selectedOption === "option1") {
+                  showAlert("You selected 'Theft'.");
+              } else if (selectedOption === "option2") {
+                  showAlert("You selected 'Loss'.");
+              } else if (selectedOption === "option3") {
+                  showAlert("You selected 'Damage'.");
+              }
+          });
+          
+          function showAlert(message) {
+              var alertDiv = document.createElement("div");
+              alertDiv.textContent = message;
+              alertDiv.classList.add("alert");
+              alert(alertDiv.textContent);
+          }
+      </script>
+  </body>
+  </html>
+  <style>
+    .customButton {
+        background-color: rgb(255, 115, 0);
+        color: white;
+        font-size: 16px;
+        width: 200px;
+        height: 75px;
+        position: absolute;
+        top: 640px;
+        left: 1194px;
+        /* Add more styles as needed */
+    }
+</style>
+<button id="myButton" class="customButton" onclick="redirectToPageee()">Apply for CreditCard</button>
 
+<script>
+  function redirectToPageee() {
+    window.location.href = "apply.html";
+  }
+  function handleButtonClick2() {
+  var message = "Date: May 25, 2023 \nMerchant: Online Store\nAmount: $10.00\nCard Number: XXXX-XXXX-XXXX-1234\nDate: May 25, 2023 \nMerchant: Online Store\nAmount: $50.00\nCard Number: XXXX-XXXX-XXXX-1234";
 
+  var transactions = message.split("\n\n");
 
-  <div>
-    <body>
+  var popup = document.createElement("div");
+  popup.classList.add("popup-message");
+
+  var contentContainer = document.createElement("div");
+  contentContainer.classList.add("popup-content");
+
+  var closeButton = document.createElement("span");
+  closeButton.classList.add("close-button");
+  closeButton.innerHTML = "&times;";
+  closeButton.addEventListener("click", function() {
+    popup.remove();
+  });
+
+  transactions.forEach(function(transaction) {
+    var lines = transaction.split("\n");
+
+    var transactionDetails = document.createElement("div");
+    transactionDetails.classList.add("transaction-details");
+
+    lines.forEach(function(line) {
+      var lineElement = document.createElement("div");
+      lineElement.textContent = line.replace(/:\s*/, ":\n");
+      transactionDetails.appendChild(lineElement);
+    });
+
+    contentContainer.appendChild(transactionDetails);
+  });
+
+  popup.appendChild(contentContainer);
+  popup.appendChild(closeButton);
+  document.body.appendChild(popup);
+}
+</script>
+  
+<style>
+  .customButton1 {
+      background-color: rgb(255, 115, 0);
+      color: white;
+      font-size: 16px;
+      width: 200px;
+      height: 75px;
+      position: absolute;
+      top: 740px;
+      left: 1194px;
+      /* Add more styles as needed */
+  }
+</style>
+<button id="myButton" class="customButton1" onclick="redirectToPage()">Pay for CreditCard</button>
+
+<script>
+function redirectToPage() {
+  window.location.href = "pay.html";
+}
+</script>
+  
+  
+
+  <!-- <div> -->
+    <!-- <body>
       
     
     
       </div>
      
-      <span class="large-text">CreditCard number :2531231457234869.</span>
-      <div>
+      <span class="large-text">CreditCard number :2531231457234869.</span> -->
+      <!-- <div>
         <body>
           <span class="large-text">Expiry Date: 04/27.</span>
+
         
     
           </div>
     </body>
+    <div>
+      <body>
+        <span class="large-text">Number of points :<span id="balance2">850</span></span>
+      
+      
+        </div>
     
     
+
+   
     <head>
         
         <style>
           .custom-button {
-            margin-top: 35px; /* Adjust the margin-top to move the button downwards */
-            margin-left: 550px;
-            background-color: grey; /* Adjust the background color as desired */
+            margin-top: 90px; /* Adjust the margin-top to move the button downwards */
+            margin-left: 500px;
+            background-color: orange; /* Adjust the background color as desired */
             color: white;
-            padding: 15px 20px;
+            padding: 12px 18px;
             font-size: 24px;
             border: none;
             cursor: pointer;
@@ -227,8 +545,106 @@
         </style>
       </head>
       <body>
-        <button class="custom-button" onclick="handleButtonClick()">View my transactions</button>
+        <button class="custom-button" onclick="handleButtonClick2()">View my transactionsss</button>
       </body>
+
+
+
+      <style>
+        .custom-textbox {
+          position: relative;
+          top: -100px; /* Adjust the top position as needed */
+          left: 185px; /* Adjust the left position as needed */
+        }
+      </style>
+      
+      <input type="number" id="myTextbox2" class="custom-textbox" placeholder="Enter number of points " />
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <style>
+          /* Styles for the button container */
+          .button-container {
+            position: relative;
+            top: -67px; /* Adjust the top position as needed */
+            left: 950px; /* Adjust the left position as needed */
+          }
+      
+          /* Styles for the large button */
+          .large-button {
+            padding: 12px 18px; /* Adjust the padding as needed */
+            font-size: 24px; /* Adjust the font size as needed */
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="button-container">
+           The large button -->
+          <!-- <button class="large-button" onclick="redeem2()">Redeemm Points</button>
+        </div>
+      </body>
+      </html>
+
+
+
+     
+  
+
+
+
+ //combo box -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Styles for the dropdown container */
+    .dropdown-container select {
+      position: relative;
+      top: -50px; /* Adjust the top position as needed */
+      left: -450px;
+      width: 400px; /* Adjust the width as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown-container">
+    <select id="dropdown2" >
+      <option value="" disabled selected>Report for card</option>
+      <option value="option1">Theft</option>
+      <option value="option2">Loss</option>
+      <option value="option3">Damage</option>
+    </select>
+  </div>
+
+  <script>
+    var dropdown = document.getElementById("dropdown2");
+    dropdown.addEventListener("change", handleOptionChange);
+     
+function handleOptionChange(){
+  var selectedOption = dropdown.value;
+      // Display an alert message based on the selected option
+      if (selectedOption === "option1") {
+        alert("You selected 'Theft'.");
+      } else if (selectedOption === "option2") {
+        alert("You selected 'Loss'.");
+      } else if (selectedOption === "option3") {
+        alert("You selected 'Damage'.");
+      }
+    }
+    
+  </script>
+</body>
+</html> -->
+
+ 
+
+  
+
     <!-- End Banner -->
     
    <!-- section -->
@@ -337,7 +753,21 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      function redeem(){
+      var balance=document.getElementById("balance").innerHTML;
+      var b = parseInt(balance);
+      var points=document.getElementById("myTextbox").value;
+      document.getElementById("balance").innerHTML=b-parseInt(points);
+    }
+    function redeem2(){
+      var balance=document.getElementById("balance2").innerHTML;
+      var b = parseInt(balance);
+      var points=document.getElementById("myTextbox2").value;
+      document.getElementById("balance2").innerHTML=b-parseInt(points);
+    }
+
+    </script>
 	
 </body>
-
-</html>

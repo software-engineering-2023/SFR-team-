@@ -2692,3 +2692,137 @@ height: 450px;
   .xx{
 	font-weight: bold;
   }
+  .loans-section {
+	text-align: center;
+	
+  }
+  .loans-list{
+	top:-90px;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+  }
+  .cckk{
+	color: orange;
+  }
+  .orange-button {
+	background-color: orange;
+	color: white;
+  }
+  .loan-list-divider {
+	border-top: 1px solid #ccc;
+	margin: 20px 0;
+  } 
+
+  .loan-card-container {
+	border: 2px solid #000;
+	border-radius: 8px;
+	padding: 10px;
+	width: 300px; /* Adjust the width as per your preference */
+	position: relative;
+	right: -570px;
+  }
+  #transactionList {
+	margin-top: 20px; /* Adjust the top margin as needed to position it slightly downwards */
+	text-align: center; /* Center the content horizontally */
+  }
+  #accountForm {
+	margin-top: 20px; /* Adjust the top margin as needed to position it slightly downwards */
+	text-align: center; /* Center the content horizontally */
+  }
+  .page-title {
+	font-size: 24px; /* Adjust the font size as needed */
+	font-weight: bold;
+	text-align: center;
+	margin-top: 80px;
+	
+  }
+  .resolve-section {
+	text-align: center;
+	
+  }
+  .resolves-list{
+	top:-90px;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+  }
+  
+  .resolves-list-divider {
+	border-top: 1px solid #ccc;
+	margin: 20px 0;
+  }
+  #calendar {
+	font-family: Arial, sans-serif;
+	width: 300px;
+	margin-right: 300px;
+
+  }
+  
+  #calendar table {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+  #calendar th,
+  #calendar td {
+	padding: 5px;
+	text-align: center;
+  }
+  
+  #calendar th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+  }
+  
+  #calendar td:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+  }
+  
+  #calendar .current-day {
+	background-color: #b3d4fc;
+  }
+  
+  #reminder-form {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 400px;
+  }
+  
+  #reminder-form h3 {
+	margin-top: 0;
+  }
+  
+  #reminder-form label {
+	display: inline-block;
+	margin-bottom: 5px;
+  }
+  
+  #reminder-form input[type="date"],
+  #reminder-form input[type="time"] {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+  }
+  
+  #reminder-form button {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #reminder-form button:hover {
+	background-color: #45a049;
+  }

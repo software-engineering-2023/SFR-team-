@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>SFR BANK - Responsive HTML5 Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -63,7 +63,17 @@
                         <ul>
                             <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
                             <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
-                           
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>SFR BANK - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section">
+                        <a class="navbar-brand" href="home.html">
+                            <img src="images/logo.png" alt="image" style="width: 200px; height: auto;">
+                        </a>
+                    </div>
+                   
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
+                            <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="menu_orange_section" style="background: #ff880e;">
+                        <nav class="navbar header-nav navbar-expand-lg">
+                            <div class="menu_section">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link" href="home.html">Home</a></li>
+                                        <li><a class="nav-link" href="about.html">About</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- End header -->
+    <!-- Start Banner -->
+    <!-- End Banner -->
+    <!-- section -->
+    <!-- end section -->
+    <div class="section contact_form">
+        <div class="container1">
+          <div class="row">
+            <div class="center-container">
+              <fieldset>
+                <div class="field">
+                  <label for="fname">From Account:</label>
+                  <input type="text" id="fname" placeholder="From Account" />
+                </div>
+                <div class="field">
+                  <label for="dropdown">Transfer Type:</label>
+                  <select id="dropdown" onchange="handleOptionChange()">
+                    <option value="" disabled selected>Choose Transfer Type</option>
+                    <option value="option1">Internal</option>
+                    <option value="option2">Domestic</option>
+                    <option value="option3">International</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="lname">To Account:</label>
+                  <input type="text" id="lname" placeholder="To Account" />
+                </div>
+                <div class="field">
+                  <label for="phonenum">Amount:</label>
+                  <input type="text" id="phonenum" placeholder="Amount" />
+                </div>
+                <div class="field">
+                  <label for="currency">Currency:</label>
+                  <select id="currency" onchange="handleOptionChange()">
+                    <option value="" disabled selected>Choose Currency</option>
+                    <option value="option1">EGP</option>
+                    <option value="option2">USD</option>
+                    <option value="option3">EUR</option>
+                    <option value="option4">SAR</option>
+                    <option value="option5">GBP</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="nid">Reason for Transfer:</label>
+                  <input type="text" id="nid" placeholder="Reason for the Transfer" />
+                  <button class="btn btn-primary animated slidelnDown" onclick="showConfirmationModal()">Transfer Amount</button>
+                </div>
+                
+                <!-- Confirmation Modal -->
+                <div id="confirmationModal" class="modal">
+                  <div class="modal-content">
+                    <h3>Confirm Transfer</h3>
+                    <p>Are you sure you want to transfer the amount?</p>
+                    <div class="modal-actions">
+                      <button onclick="transferAmount()" class="btn btn-success">Yes</button>
+                      <button onclick="closeModal()" class="btn btn-danger">No</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Success Modal -->
+                <div id="successModal" class="modal">
+                  <div class="modal-content">
+                    <h3>Transfer Successful</h3>
+                    <p>The amount has been transferred.</p>
+                    <div class="modal-actions">
+                      <button onclick="closeModal()" class="btn btn-primary"> OK </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+               
+               
+               
+                    <!-- Confirmation Modal -->
+                    <div id="confirmationModal" class="modal">
+                      <div class="modal-content">
+                        <h3>Confirm Transfer</h3>
+                        <p>Are you sure you want to transfer the amount?</p>
+                        <div class="modal-actions">
+                          <button onclick="transferAmount()" class="btn btn-success">Yes</button>
+                          <button onclick="closeModal()" class="btn btn-danger">No</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Success Modal -->
+                    <div id="successModal" class="modal">
+                      <div class="modal-content">
+                        <h3>Transfer Successful</h3>
+                        <p>The amount has been transferred.</p>
+                        <div class="modal-actions">
+                          <button onclick="closeModal()" class="btn btn-primary"> OK </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    
+
+             </div>
+   </fieldset>
+                  
+                
+                
+
+
+
+
+
+                <div class="col-lg-6 col-sm-12 offset-lg-3">
+                    <div class="full">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row margin-top_30">
+            <div class="col-sm-12">
+                <div class="full">
+                    <div class="center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- end contact_form -->
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <img class="img-responsive" src="images/logo.png" alt="#" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="home.html">> Home</a></li>
+                                    <li><a href="about.html">> About</a></li>
+                                    <li><a href="contact.html">> Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                                    <h3>Contact us</h3>
+                                    <ul class="full">
+                                        <li><img src="images/i5.png"><span>Cairo,<br>Egypt</span></li>
+                                        <li><img src="images/i6.png"><span>SRFbank@gmail.com</span></li>
+                                        <li><img src="images/i7.png"><span>19991</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Copyrights 2023 design by SRFGirls</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+    .containerrr {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 0px;
+      margin-left: 0px;
+      }
+      #my-image {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      }
+      
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        text-align: center;
+      }
+    
+      .modal-actions {
+        margin-top: 10px;
+      }
+    
+    
+     
+    
+      .dropdown-container {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+    
+      .btn-primary {
+        display: block;
+        margin-top: 20px;
+      }
+    
+    
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        width: 300px; /* Adjust the width value as needed */
+        text-align: center;
+    }
+    
+    .button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+      
+    /* 
+       .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      
+      } */
+      
+      .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-left: 20px;
+      }
+      
+      .center-container {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      margin: 30 auto;
+      }
+      
+      .field {
+      margin-top: 30px;
+      /* margin-bottom: 10px; */
+      }
+    </style>
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

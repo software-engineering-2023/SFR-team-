@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>SFR BANK - Responsive HTML5 Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -63,7 +63,17 @@
                         <ul>
                             <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
                             <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
-                           
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
                         </ul>
                     </div>
                 </div>
@@ -90,7 +100,7 @@
                 </div>
                      </div>
                  </nav>
-              
+                 
                 </div>
             </div>
           </div>
@@ -106,7 +116,18 @@
    <!-- section -->
 
     <!-- end section -->
-
+    <div class="row margin-top_10">
+        <div class="col-sm-12">
+            <div class="full">
+                <div class="center">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
     <!-- contact_form -->
     <div class="section contact_form">
         <div class="container">
@@ -118,8 +139,26 @@
                 </div>
             </div>
         </div>
-       
-        <div class="row margin-top_30">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog reports-button">
+                    <a href="resolve.html">
+                        <img class="img-responsive" src="images/reslove.jpeg" alt="#" />
+                        <h4>Reports and Issues</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog notifications-button">
+                    <a href="postnotif.html">
+                        <img class="img-responsive" src="images/notif.jpeg" alt="#" />
+                        <h4>Notifications</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row margin-top_10">
             <div class="col-sm-12">
                 <div class="full">
                     <div class="center">
@@ -169,7 +208,6 @@
                          </div>
                             </div>
                         </div>
-                        
 					</div>
                 </div>
 			 </div>
@@ -181,7 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">©️ Copyrights 2023 design by SRFGirls </p>
+                    <p class="crp">© Copyrights 2023 design by SRFGirls</p>
                 </div>
             </div>
         </div>

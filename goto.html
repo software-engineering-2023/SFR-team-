@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>SFR BANK - Responsive HTML5 Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -70,6 +70,18 @@
                         <ul>
                             <li><a href="mailto:SRFbank@gmail.com"><img src="images/mail_icon.png" alt="#" />SRFbank@gmail.com</a></li>
                             <li><a href="tel:19991"><img src="images/phone_icon.png" alt="#" />19991</a></li>
+                            <li><a class="join_bt" href="#" onclick="confirmLogout()">Log Out</a></li>
+
+                            <script>
+                              function confirmLogout() {
+                                var confirmed = confirm("Are you sure you want to log out?");
+                                if (confirmed) {
+                                  // Redirect to home.html
+                                  window.location.href = "home.html";
+                                }
+                              }
+                            </script>
+                            
                            
                         </ul>
                     </div>
@@ -211,7 +223,8 @@
             <div class="col-sm-12">
                 <div class="full">
                     <div class="center">
-        
+                        <a href="transfers.html" class="button btn-primary">Transfer </a>
+                        <a href="clienttransaction.html" class="button btn-primary" style="margin-left: 10px;"> Account transaction</a>
                     </div>
                 </div>
             </div>
@@ -302,5 +315,29 @@
     <script src="js/custom.js"></script>
 	
 </body>
+<style>
+    .btn-primary {
+    display: block;
+    margin-top: 20px;
+  }
 
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    width: 300px; /* Adjust the width value as needed */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+}
+</style>
 </html>
