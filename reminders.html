@@ -37,15 +37,8 @@
 
 </head>
 
-<body onload="showPopup()" id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-    <div id="popup" class="popup">
-        <div class="popup-content">
-          <h2>Reminder!</h2>
-          <p>Credit card Payment</p>
-          <p>loan Payment</p>
-          
-        </div>
-      </div>
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
@@ -90,49 +83,17 @@
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="home.html">Home</a></li>
                         <li><a class="nav-link" href="about.html">About</a></li>
-                        <li>
-                            <a class="nav-link" href="#" onclick="toggleNotifications()">Notifications
-                                <span id="notificationCount" class="notification-count">3</span></a>
-                            <div id="notification-dropdown" class="notification-dropdown">
-
-                              <!-- Notifications content goes here -->
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message"> Dear Customer , Your Al Ahly net login password has been successfully changed for more information call 19623</span>
-                              </div>
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message">Summer Offer With 30% OFF!
-                                    Valid Till (30/4/2023) </span>
-                              </div>
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message">Get EGP 50 back to your wallet after receiving your order of EGP 250 or more, today! Order now and use the code JFSJ app.breadfast.com</span>
-                              </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#" onclick="toggleReminder()">Reminders
-                                <span id="notificationCount" class="notification-count">3</span></a>
-                            <div id="reminder-dropdown" class="reminder-dropdown">
-                              <!-- Notifications content goes here -->
-                              <div class="reminder-item">
-                                <span class="reminder-title">&bull;</span>
-                                <span class="reminder-message"> Dear Customer , this your credit card payment reminder</span>
-                              </div>
-                              <div class="reminder-item">
-                                <span class="reminder-title">&bull;</span>
-                                <span class="reminder-message">Summer Offer With 30% OFF!
-                                    Valid Till (30/4/2023) </span>
-                              </div>
-                            
-                            </div>
-                        </li>
+                        
                     </ul>
                 </div>
                      </div>
                  </nav>
-                 
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
                 </div>
             </div>
           </div>
@@ -142,7 +103,107 @@
     <!-- End header -->
 
     <!-- Start Banner -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        #my-image {
+          position: absolute;
+          top: 150px;
+          left: 0px;
+          width: 500px;
+      height: 450px;
+        }
+      </style>
+    </head>
+    <body>
+     
+    
+      <img id="my-image" src="/Users/archfarahmacbook/Desktop/hi.png" alt="">
+    
+      
+    
+    </body>
+    </html>
 
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #my-textbox {
+      position: absolute;
+      top: 270px;
+      left: 530px;
+      width: 500px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <input type="text" id="my-textbox" name="name" value="Enter Amount">
+
+</body>
+</html>
+<style>
+    
+    #reminder-form {
+      position: absolute;
+      top: 350px;
+      left: 530px;
+      width: 500px;
+      height: 40px;
+    }
+    .dropdown-container {
+      position: absolute;
+      top: 1000px;
+      left: 20px;
+    }
+  </style>
+<div class="dropdown-container" style="position: relative; top: 50px; left: 0px;">
+    <select id="dropdown" onchange="handleOptionChange()">
+        <option value="" disabled selected>Select an Option</option>
+        <option value="option1">Water</option>
+        <option value="option2">Gas</option>
+        <option value="option3">Electricity</option>
+        <option value="option4">Telephone bills</option>
+    </select>
+</div>
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="calendar.css">
+    </head>
+    <body>
+      <div id="container" style="margin-top: 10px; margin-left: 10px;">
+        <div id="calendar"></div>
+    
+        <div id="reminder-form">
+          <h3>Set a Reminder</h3>
+          <label for="reminder-date">Date:</label>
+          <input type="date" id="reminder-date" required>
+          <br>
+          <label for="reminder-time">Time:</label>
+          <input type="time" id="reminder-time" required>
+          <br>
+          <button id="set-reminder-btn" style="background-color:orange; color: white;">Set Reminder</button>
+        </div>
+      </div>
+    
+      <script src="calendar.js"></script>
+    </body>
+    </html>
+    
+    
     <!-- End Banner -->
     
    <!-- section -->
@@ -160,51 +221,7 @@
                 </div>
             </div>
         </div>
-       <div class="section contact_form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 offset-lg-3">
-                    <div class="full">
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-      
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="creditcard.html" onclick="checker()">
-                        <img class="img-responsive" src="images/creditcard.png" alt="#" />
-                        <h4>Credit Cards</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="reminders.html" onclick="Reminders">
-                        <img class="img-responsive" src="images/s2.png" alt="#" />
-                        <h4>Reminders</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="loan.html" onclick="Loans">
-                        <img class="img-responsive" src="images/loan.jpeg" alt="#" />
-                        <h4>Loans</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="bill.html" onclick="BillPayments">
-                        <img class="img-responsive" src="images/billpayment.jpeg" alt="#" />
-                        <h4>BillPayments</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
+       
         <div class="row margin-top_30">
             <div class="col-sm-12">
                 <div class="full">
@@ -255,16 +272,6 @@
                          </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Reports</h3>
-                             <ul class="full">
-                                <li><a href="report.html">> Report technical issue</a></li>
-                             </ul>
-                         </div>
-                            </div>
-                        </div>
 					</div>
                 </div>
 			 </div>
@@ -276,7 +283,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© Copyrights 2023 design by SRFGirls</p>
+                    <p class="crp">©️ Copyrights 2023 design by SRFGirls</p>
                 </div>
             </div>
         </div>

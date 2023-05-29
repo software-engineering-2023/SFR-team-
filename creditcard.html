@@ -37,15 +37,8 @@
 
 </head>
 
-<body onload="showPopup()" id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-    <div id="popup" class="popup">
-        <div class="popup-content">
-          <h2>Reminder!</h2>
-          <p>Credit card Payment</p>
-          <p>loan Payment</p>
-          
-        </div>
-      </div>
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
@@ -90,49 +83,17 @@
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="home.html">Home</a></li>
                         <li><a class="nav-link" href="about.html">About</a></li>
-                        <li>
-                            <a class="nav-link" href="#" onclick="toggleNotifications()">Notifications
-                                <span id="notificationCount" class="notification-count">3</span></a>
-                            <div id="notification-dropdown" class="notification-dropdown">
-
-                              <!-- Notifications content goes here -->
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message"> Dear Customer , Your Al Ahly net login password has been successfully changed for more information call 19623</span>
-                              </div>
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message">Summer Offer With 30% OFF!
-                                    Valid Till (30/4/2023) </span>
-                              </div>
-                              <div class="notification-item">
-                                <span class="notification-title">&bull;</span>
-                                <span class="notification-message">Get EGP 50 back to your wallet after receiving your order of EGP 250 or more, today! Order now and use the code JFSJ app.breadfast.com</span>
-                              </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#" onclick="toggleReminder()">Reminders
-                                <span id="notificationCount" class="notification-count">3</span></a>
-                            <div id="reminder-dropdown" class="reminder-dropdown">
-                              <!-- Notifications content goes here -->
-                              <div class="reminder-item">
-                                <span class="reminder-title">&bull;</span>
-                                <span class="reminder-message"> Dear Customer , this your credit card payment reminder</span>
-                              </div>
-                              <div class="reminder-item">
-                                <span class="reminder-title">&bull;</span>
-                                <span class="reminder-message">Summer Offer With 30% OFF!
-                                    Valid Till (30/4/2023) </span>
-                              </div>
-                            
-                            </div>
-                        </li>
+                        
                     </ul>
                 </div>
                      </div>
                  </nav>
-                 
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
                 </div>
             </div>
           </div>
@@ -140,16 +101,146 @@
         
     </header>
     <!-- End header -->
-
+    
     <!-- Start Banner -->
+    <head>
+    <style>
+    .large-text {
+        font-size: 25px; /* Adjust the size as per your requirement */
+      position: relative;
+      top: 110px;
+      margin-left: 20px;}
+  </style>
+</head> 
+<div>
+<body>
+  <span class="large-text">Cardholder :Sama Samy.</span>
 
+
+  </div>
+ 
+  <span class="large-text">CreditCard number :1231231123234299.</span>
+  <div>
+    <body>
+      <span class="large-text">Expiry Date: 06/25.</span>
+    
+
+      </div>
+</body>
+
+
+<head>
+    
+    <style>
+      .custom-button {
+        margin-top: 35px; /* Adjust the margin-top to move the button downwards */
+        margin-left: 550px;
+        background-color: grey; /* Adjust the background color as desired */
+        color: white;
+        padding: 15px 20px;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        /* float: right; */
+      }
+      .popup-message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <button class="custom-button" onclick="handleButtonClick()">View my transactions</button>
+  </body>
+
+
+
+
+
+  <div>
+    <body>
+      
+    
+    
+      </div>
+     
+      <span class="large-text">CreditCard number :2531231457234869.</span>
+      <div>
+        <body>
+          <span class="large-text">Expiry Date: 04/27.</span>
+        
+    
+          </div>
+    </body>
+    
+    
+    <head>
+        
+        <style>
+          .custom-button {
+            margin-top: 35px; /* Adjust the margin-top to move the button downwards */
+            margin-left: 550px;
+            background-color: grey; /* Adjust the background color as desired */
+            color: white;
+            padding: 15px 20px;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            /* float: right; */
+          }
+          .popup-message {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          padding: 20px;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+    
+        .close-button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: white;
+          cursor: pointer;
+        }
+        </style>
+      </head>
+      <body>
+        <button class="custom-button" onclick="handleButtonClick()">View my transactions</button>
+      </body>
     <!-- End Banner -->
     
    <!-- section -->
-
+  
     <!-- end section -->
 
     <!-- contact_form -->
+
+
+
+
+
+
+
     <div class="section contact_form">
         <div class="container">
             <div class="row">
@@ -160,51 +251,7 @@
                 </div>
             </div>
         </div>
-       <div class="section contact_form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 offset-lg-3">
-                    <div class="full">
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-      
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="creditcard.html" onclick="checker()">
-                        <img class="img-responsive" src="images/creditcard.png" alt="#" />
-                        <h4>Credit Cards</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="reminders.html" onclick="Reminders">
-                        <img class="img-responsive" src="images/s2.png" alt="#" />
-                        <h4>Reminders</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="loan.html" onclick="Loans">
-                        <img class="img-responsive" src="images/loan.jpeg" alt="#" />
-                        <h4>Loans</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <a href="bill.html" onclick="BillPayments">
-                        <img class="img-responsive" src="images/billpayment.jpeg" alt="#" />
-                        <h4>BillPayments</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
+       
         <div class="row margin-top_30">
             <div class="col-sm-12">
                 <div class="full">
@@ -251,16 +298,6 @@
                                <li><img src="images/i5.png"><span>Cairo,<br>Egypt</span></li>
                                <li><img src="images/i6.png"><span>SRFbank@gmail.com</span></li>
                                <li><img src="images/i7.png"><span>19991</span></li>
-                             </ul>
-                         </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Reports</h3>
-                             <ul class="full">
-                                <li><a href="report.html">> Report technical issue</a></li>
                              </ul>
                          </div>
                             </div>
