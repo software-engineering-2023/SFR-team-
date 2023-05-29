@@ -2663,3 +2663,32 @@ transform: scale(1.0);
   .reminder-message {
 	color: #666;
 }
+#my-image {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	width: 500px;
+height: 450px;
+  }
+  #my-textbox {
+	position: absolute;
+	top: 270px;
+	left: 530px;
+	width: 500px;
+	height: 40px;
+  }
+  #reminderr-form {
+	position: absolute;
+	top: 350px;
+	left: 530px;
+	width: 500px;
+	height: 40px;
+  }
+  .hdropdown-container {
+	position: absolute;
+	top: 1000px;
+	left: 20px;
+  }
+  .xx{
+	font-weight: bold;
+  }
