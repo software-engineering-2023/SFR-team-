@@ -64,7 +64,12 @@ h6 {
 h1 {
 	font-size: 24px
 }
-
+#telephone-company {
+    width: 220px; /* Adjust the width value as needed */
+  }
+  .dropdown-container select {
+    width: 300px; /* Adjust the width value as needed */
+  }
 h2 {
 	font-size: 22px
 }
@@ -609,6 +614,7 @@ a.navbar-brand {
 .search-btn img {
     padding: 2px;
 }
+
 
 .theme_color {
 	color: #ff880e;
@@ -2484,3 +2490,176 @@ ul.bottom_menu li {
 	border: 1px solid #ccc;
 	padding: 10px;
   }
+  .notifications {
+	position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  background-color: red;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  font-size: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 600px;
+  background-color: #67a381;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+ .dropdown a:hover {
+  background-color: black;
+  box-shadow: 0px 3px 20px 0px black;
+transform: scale(1.0);
+}
+
+.notifications:hover .dropdown {
+  display: block;
+}
+.popup-message {
+	position: fixed;
+	top: 50%;
+	right: 10px; /* Adjust the right value as needed */
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 9999;
+  }
+  .popup {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	transform: translate(0, 0);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	z-index: 9999;
+	width: 300px; /* Adjust the width as needed */
+  height: 200px;
+  }
+
+  
+  .popup-content {
+	color: #000;
+	text-align: center;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+  }
+  
+  .popup button {
+	margin-top: 20px;
+  }
+  
+  .popup-content {
+	margin-bottom: 10px;
+	color: black;
+  }
+  
+  .close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #fff; /* Set the color of the close button */
+  }
+  .notification-count {
+	background-color: red;
+	color: white;
+	padding: 2px 6px;
+	border-radius: 50%;
+	font-size: 12px;
+	position: relative;
+	top: -6px;
+	margin-left: 4px;
+  }
+  
+  
+  .notification-dropdown.show {
+	display: block;
+  }
+  .notification-dropdown {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 200px;
+	display: none;
+  }
+  
+  .notification-item {
+	margin-bottom: 10px;
+  }
+  
+  .notification-title {
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .notification-message {
+	color: #666;
+}
+.reminder-dropdown.show {
+	display: block;
+  }
+.reminder-dropdown {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 200px;
+	display: none;
+  }
+  
+  .reminder-item {
+	margin-bottom: 10px;
+  }
+  
+  .reminder-title {
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .reminder-message {
+	color: #666;
+}
